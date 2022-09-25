@@ -1,0 +1,10 @@
+<br><br><h1 style="clear: both;"> Child Component</h1>
+<div id="myModal" class="modal" *ngIf="display">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span (click)="displayNone()" class="close">&times;</span>    
+      <iframe height="700px" width="100%;"  class="youtube" [src]='videoLink | safe' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<app-video [display]="display" [videoLink]="videoLink"> </app-video>
+
+<div class="card" *ngFor="let item of apiData">
+   <a (click)="displayBlock(item.trailer)"> <img src={{item.poster}} alt="Avatar" style="width:100%"></a>
+    <div class="container">
+      <h4><b>Movie Name: {{item.name | uppercase}}</b></h4>
+      <p>Release Year: {{item.year}}</p>
+    </div>
+</div>
+
+
+
+<hr>
+
+<router-outlet></router-outlet>
